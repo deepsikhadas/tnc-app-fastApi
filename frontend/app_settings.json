@@ -1,0 +1,12 @@
+{
+	"JOB_TABLE":"tnc-job-table-test",
+	"USR_INDEX": "user_id-index",
+	"REC_TYPE_INDEX":"record_type-index",
+	"SESSION_TABLE":"tnc-session-table",
+	"STEP_INDEX":"step-index",
+	"EMAIL_INDEX":"email-index",
+	"S3_BUCKET":"tnc-test-app",
+	"region":"us-east-2",
+	"GOOGLE_OAUTH_ID":"691032820547-o5ls9akmlrej6puh0qu1jks09a9bgbqm.apps.googleusercontent.com",
+	"OUTBOUND_ADDRESS":"foxbounder.noreply@gmail.com"
+}

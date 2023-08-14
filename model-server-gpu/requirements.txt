@@ -1,0 +1,15 @@
+exif
+ipykernel
+jsonpickle
+humanfriendly
+numpy
+matplotlib
+openpyxl
+Pillow>=5.3.0
+pandas
+tqdm
+requests
+boto3
+simple_scheduler
+flask
+yagmail

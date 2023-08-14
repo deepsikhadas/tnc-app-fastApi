@@ -1,0 +1,248 @@
+body{
+	font-family: 'Manrope', sans-serif;
+}
+
+.outer{
+	height: 100%;
+	overflow: scroll;
+	width: 80%;
+	margin: auto;
+	color: white;
+	box-shadow: 2px 2px 29px black;
+}
+
+.main{
+	margin:0;
+	padding: 10px;
+	background: rgba(175,175,175,.5);	
+}
+
+.head{
+	padding-bottom: 0;
+}
+
+.footer{
+	margin-bottom: 0 !important;
+	background-color: lightgrey;
+	opacity: 100%;
+	color: black;
+}
+
+h1{
+	font-family: 'Lora', serif;
+	color: white;
+	margin: 0;
+	margin-left: 10px;
+	display: inline-block;
+	font-size: 2.6em;
+	top: -14;
+ 	position: relative;
+
+}
+
+
+.logo{
+	position: relative;
+	top: 15%;
+	height: 4em;
+	display: inline-block;
+}
+
+
+
+h2{	
+	color: white;
+	font-family: 'Lora', serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+thead{
+	font-weight: bold
+}
+
+
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE" 
+}
+
+#upload_spinner{
+	margin-left: 20px;
+	display: inline-block;
+}
+
+
+.dropzone{
+	color: black;
+	height: 200px;
+	background-color: #DCDCDC;
+	opacity: 100%;
+	border: 2px solid black;
+	border-radius: 25px;
+}
+
+.dropzone.hover{
+	background-color: #aeaefc;
+}
+
+.dropzone.success{
+	background-color: #00fffe;
+}
+
+.dropzone.error{
+	background-color:  #ffcdca;
+}
+
+#dropzone_spinner{
+	position: relative;
+	top: 50%;
+}
+
+
+.dz_decor{
+	position: relative;
+	top: 40%;
+	text-align: center;
+}
+
+#dz_default_icon{
+	font-size: 50px;
+}
+
+
+.job_row{
+	opacity: 100%;
+	color: black;
+	background: #ddd;
+	margin: auto;
+	margin-top: 5px;
+	
+	border-radius: 10px;
+	box-shadow: 0 3px 14px #000;
+}
+
+.job_info{
+	display: inline-block;
+	width: 75%;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.job_btn{
+	display: inline-block;
+	float: right;
+	text-align: center;
+	width: 20%;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.job_progress{
+	margin-top: 5px;
+	height: 10px;
+	background: #ff8939;;
+	position: relative;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.job_progress.finished{
+	width: 100% !important;
+}
+
+.job_progress.queued{
+	width: 0%;
+}
+
+.job_progress.working{
+	width: 1%;
+	border-bottom-right-radius: 0px;
+}
+
+.job_name{
+	border-bottom: 1px solid black;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin-bottom: 3px;
+}
+
+.job_attr{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.v_download{
+	font-size: 1.4em;
+	position: relative;
+	top: 50%;
+}
+
+.decor_msg{
+	display: block;
+}
+
+.working_spinner{
+	
+}
+
+.placeholder{
+	background-image: linear-gradient(90deg, #ff9e5cab, #fff, #8afcfc, #fff,#ff9e5cab,#fff);
+	background-size: 500% 100%;
+	animation: animateBg 4s infinite linear;
+	padding: 10px;
+}
+
+@keyframes animateBg {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.user_info{
+	float: right;
+	margin: 5px;
+}
+
+.user_block{
+	border: 1px solid white;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.user_name{
+	border-bottom: 1px solid white;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin-bottom: 3px;
+}
+
+.user_attr{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+a.brand{
+	color: white;
+}
+
+.glogin{
+	margin: auto;
+	width: min-content;
+	height: 80%;
+}
+
+.corner_buttons{
+	float: right;
+	margin-right: 10px;
+	
+	position: relative;
+	top: -1.5em;
+}
+
+a#feedback{
+	color: #8afcfc;
+}

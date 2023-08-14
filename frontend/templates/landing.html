@@ -1,0 +1,75 @@
+<html>
+
+	<head>
+		<title>FoxBounder</title>
+		<link rel="icon" type="image/x-icon" href={{favicon}}>
+		<link rel="Stylesheet" href={{style_link}}>
+
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="https://unpkg.com/vue@3"></script>
+		<script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+
+		<script
+			  src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+			  integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA="
+			  crossorigin="anonymous"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Lora&family=Manrope&display=swap" rel="stylesheet"> 
+		<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+	</head>
+	<body style="background-image: url({{bk_img}});", data-STAGE="{{STAGE}}">
+		<div class="outer">
+			<div class="main head">
+				<img class='logo' src="{{logo_image}}"> <h1>FoxBounder</h1>
+			</div>
+				
+			<div class="main" id="glogin">
+				<div class="glogin">
+					<div id="g_id_onload"
+				        data-client_id={{oauth_id}}
+				       	data-callback="login_callback"
+				        data-auto_prompt="false">
+				    </div>
+				    <div class="g_id_signin"
+				    	data-type="standard"
+				    	data-size="large"
+				    	data-theme="outline"
+				    	data-text="sign_in_with"
+			        	data-shape="rectangular"
+	   		        	data-logo_alignment="left">
+				    </div>
+				</div>
+
+				
+			</div>
+			
+
+			<div class="main footer">
+				
+			The Center for Data Science at UMass Amherst | The Nature Conservency 
+				
+			</div>
+		</div>
+
+	</body>
+	<script>
+		// data-login_uri='http://localhost:5000{{redirect_url}}'
+		function login_callback(response){
+			console.log(response)
+			$.ajax({
+				url:"login",
+				data:response
+			}).done(function(resp){
+				window.location.reload()
+				//window.location.href = $("body").data("stage")
+			})
+		}
+	</script>
+</html>

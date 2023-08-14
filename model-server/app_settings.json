@@ -1,0 +1,9 @@
+{
+	"JOB_TABLE":"tnc-job-table-test",
+	"USR_INDEX": "user_id-index",
+	"REC_TYPE_INDEX":"record_type-index",
+	"STEP_INDEX":"step-index",
+	"S3_BUCKET":"tnc-test-app",
+	"region":"us-east-2",
+	"TNC_QUEUE":"tnc-queue"
+}
